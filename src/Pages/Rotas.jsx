@@ -1,12 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Login from './Login';
-import Search from './Search';
 import Album from './Album';
 import Favorites from './Favorites';
 import ProfileEdit from './ProfileEdit';
 import Profile from './Profile';
 import NotFound from './NotFound';
+import Search from './Search';
 
 class Rotas extends React.Component {
   render() {
