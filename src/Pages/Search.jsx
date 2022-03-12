@@ -74,7 +74,7 @@ export default class Search extends React.Component {
           disabled={ pesquisa.length < number2 }
           onClick={ this.lidaClickBotao }
         >
-          botao
+          Buscar
         </button>
       </form>
     );
