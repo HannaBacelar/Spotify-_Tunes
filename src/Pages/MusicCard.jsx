@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { addSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
+import { addSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Loading from './Loading';
 
 const INITIAL_STATE = {
@@ -14,6 +14,10 @@ class MusicCard extends React.Component {
     this.state = INITIAL_STATE;
   }
 
+  async componentDidMount() {
+    this.listaFavorita();
+  }
+
  favoritaMusicas = async (event) => {
    const { songs } = this.props;
    const musica = songs.find((som) => som.trackId === +event.target.value); // procura pela musica especifica que tenha o Id === o da msc favoritada e passa o evento ao checkbox
@@ -24,6 +28,14 @@ class MusicCard extends React.Component {
    await addSong(musica);
    this.setState({
      loading: false,
+   });
+ }
+
+ listaFavorita = async () => {
+   const lista = await getFavoriteSongs();
+   const pegaId = lista.map((id) => id.trackId);
+   this.setState({
+     checked: pegaId,
    });
  }
 
