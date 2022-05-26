@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../css/Search.css';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import Header from './Header';
 import Loading from './Loading';
@@ -54,29 +55,31 @@ export default class Search extends React.Component {
     const { pesquisa } = this.state;
     return (
       //  <Search />
-      <form>
-        <label htmlFor="cantor-input">
-          <input
-            data-testid="search-artist-input"
-            type="text"
-            name="name"
-            value={ pesquisa }
-            id="cantor-input"
-            placehulder="Nome do Artista"
-            onChange={ this.lidaBotao }
-          />
-        </label>
-        <button
-          data-testid="search-artist-button"
-          type="submit"
-          name="botao"
-          id="botao"
-          disabled={ pesquisa.length < number2 }
-          onClick={ this.lidaClickBotao }
-        >
-          Buscar
-        </button>
-      </form>
+      <div className="searchBody">
+        <form>
+          <label htmlFor="cantor-input">
+            <input
+              data-testid="search-artist-input"
+              type="text"
+              name="name"
+              value={ pesquisa }
+              id="cantor-input"
+              placeholder="Nome do Artista"
+              onChange={ this.lidaBotao }
+            />
+          </label>
+          <button
+            data-testid="search-artist-button"
+            type="submit"
+            name="botao"
+            id="botao"
+            disabled={ pesquisa.length < number2 }
+            onClick={ this.lidaClickBotao }
+          >
+            Buscar
+          </button>
+        </form>
+      </div>
     );
   }
 
@@ -89,7 +92,7 @@ export default class Search extends React.Component {
         );
       }
       return (
-        <p>Nenhum álbum foi encontrado</p>
+        <p className="notfound">Nenhum álbum foi encontrado</p>
       );
     }
   }
@@ -125,7 +128,7 @@ export default class Search extends React.Component {
     const { form, loading } = this.state;
     return (
       <div data-testid="page-search">
-        <Header />
+        <Header className="header" />
         {/* se o estado de form for true aparece o form, caso não ele some retornando nada(null) / */}
         {form ? this.lidacomForm() : null}
         {loading ? <Loading /> : this.lidacomForm}

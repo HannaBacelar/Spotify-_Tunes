@@ -1,7 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './Header';
+import React from 'react';
+import '../css/Album.css';
 import getMusics from '../services/musicsAPI';
+import Header from './Header';
 import MusicCard from './MusicCard';
 
 const INITIAL_STATE = {
@@ -31,10 +32,9 @@ class Album extends React.Component {
     const { albumId, allMusics } = this.state;
     return (
       <div data-testid="page-album">
-        Album
         <Header />
-        <MusicCard songs={ allMusics } />
-        <div>
+        <MusicCard className="cardMusic" songs={ allMusics } />
+        <div className="albums">
           <h2 data-testid="artist-name">
             { albumId.artistName }
           </h2>

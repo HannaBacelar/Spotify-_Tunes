@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.searchBody {
+  background-color: rgb(29, 110, 0);
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+
+}
+
+.headerSearch {
+  background-color: black;
+}
+
+.links {
+  color: white;
+  display: flex;
+  padding-left: 15px;
+
+
+}
+
+.user {
+  color: white;
+  padding-left: 15px;
+}
+
+.notfound {
+  color: rgb(20, 20, 20);
+  font-size: 30px;
+}
+
+#cantor-input {
+  border: none;
+  border-bottom: 2px solid rgb(255, 252, 252);
+  box-sizing: border-box;
+  margin: 8px 0;
+  margin-left: -300px;
+  padding: 12px 20px;
+  width: 300px;
+}
+
+#botao {
+  background-color: rgb(0, 136, 34);
+  color: white;
+  text-align: center;
+  width: 150px;
+
+}

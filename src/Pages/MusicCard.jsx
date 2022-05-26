@@ -1,5 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+import '../css/MusicCard.css';
 import { addSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Loading from './Loading';
 
@@ -47,7 +48,7 @@ class MusicCard extends React.Component {
        { loading
          ? <Loading />
          : songs.map((song) => ( // map retorna cada som (junto com seu nome)
-           <div key={ song.trackName }>
+           <div className="cardMusic" key={ song.trackName }>
              <p>
                { song.trackName }
              </p>

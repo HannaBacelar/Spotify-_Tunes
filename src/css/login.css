@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bodyLogin {
+  background-color: black;
+
+}
+
+.header-login {
+  background-color: white;
+  height: 100px;
+}
+
+.logo-login {
+  margin-top: 20px;
+  width: 150px;
+
+
+}
+
+.form-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 900px;
+  margin-top: -50px;
+}
+
+#botao {
+  background-color: rgb(0, 136, 34);
+  color: white;
+  height: 30px;
+  margin-top: 15px;
+  text-align: center;
+  width: 150px;
+
+}
+
+#name-input {
+  border: none;
+  border-bottom: 2px solid rgb(255, 252, 252);
+  box-sizing: border-box;
+  margin: 8px 0;
+  margin-left: 30px;
+  padding: 12px 20px;
+  width: 300px;
+}
+
+.containter-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+#tela-notbook {
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+#tela-notbook {
+  border-radius: 10px;
+  height: 300px;
+  margin-top: 100px;
+  text-align: left;
+  width: 500px;
+}
+
+#titulo {
+  color: white;
+  margin-top: 200px;
+  text-align: center;
+}
+
+#titulo2 {
+  margin-top: 100px;
+  text-align: center;
+}
