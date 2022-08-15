@@ -1,28 +1,23 @@
   
-  #  📝 Boas vindas ao repositório do projeto React Testing Library!
+  #  📝 Boas vindas ao repositório do projeto Spotify Tunes!
 
-- Este proejto foi desenvolido no ano de 2022 no Módulo de Fundamentos na trybe!!
+- Este proejto foi desenvolido no ano de 2022 no Módulo de Front-End na trybe!!
 
 # 🚦 Habilidades ultilizadas 
-_ Utilizar os seletores (queries) da React-Testing-Library em testes automatizados.
-
-_ Simular eventos com a React-Testing-Library em testes automatizados.
-
-_ Testar fluxos lógicos assíncronos com a React-Testing-Library.
-
-_ Escrever testes que permitam a refatoração da estrutura dos componentes da aplicação sem necessidade de serem alterados.
-
-_ Criar mocks de APIs utilizando fetch.
-
-_ Testar inputs.
+_ React.js
+_ HTML 
+_ CSS 
+_ Utilizar os ciclos de vida de um componente React;
+_ Requisiçoes de Api
 
 # Contextualizando
-Esse projeto possui testes para uma aplicação React.js, as aplicaçoes foram dadas pelo curso da trybe, e tive a funçãp de cobrir esses testes.
+Esse projeto  é um site de músicas que  possui página de login, opção de pesquisar por artista, reproduzir prévias de músicas dos albúns, ver perfil do usuario, é um otimo site pra quem é amante de músicas. 
+
 # Como Instalar  e configurar 
   1. Clone o repositório
-  - git  clone git@github.com:HannaBacelar/Rect-Testing-Library.git
+  - git  clone git@github.com:HannaBacelar/Spotify-_Tunes.git
   3. Entre na pasta do repositório clonado
-  - cd project-React-Testing-Library
+  - cd project-Spotify_Tunes
   5. Instale as dependencias 
    - npm install 
   6. Abra com o 'npm Start'
